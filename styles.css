@@ -265,4 +265,8 @@ h2 {
     width: 50%;
     font-size: 12px;
   }
+    
+  .text {
+      height: 50%;
+    }   
 }
