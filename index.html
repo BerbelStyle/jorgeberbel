@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Jorge Berbel</title>
+      <link rel="shortcut icon" href="images/logoprin.png">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div class="header">
+      <button class="tablinks home" onclick="openTab(event, 'Home')" id="defaultOpen">
+        <img src="images/logo.png" class="logo"></img>
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'About')">About  Me</button>
+      <button class="tablinks" onclick="openTab(event, 'Designs')">Designs</button>
+      <button class="tablinks" onclick="openTab(event, 'Experience')">Experience</button>
+    </div>
+        
+    <!-- TAB 0: HOME -->
+    <div id="Home" class="tabcontent fade">
+      <div class="cover">    
+        <!-- Images for the cover -->
+        <img src="images/jorge2.jpeg" class="photo"></img>
+        <img src="images/jorge3.jpeg" class="photo"></img>
+        <img src="images/jorge1.jpeg" class="photo"></img>
+        <img src="images/jorge5.jpeg" class="photo"></img>
+        <img src="images/jorge4.jpeg" class="photo"></img>
+
+        <!-- Author -->
+        <div class="autor">Jorge Berbel</div>
+        
+        <!-- Social links -->
+        <div class="social">
+          <a href="https://www.instagram.com/jorge.berbel/?hl=es" target="blank"> 
+            <img src="images/instagram.png" class="icon"></img>
+          </a>
+          <a href="https://github.com/BerbelStyle" target="blank"> 
+            <img src="images/github.png" class="icon"></img>
+          </a>
+          <a href="https://www.linkedin.com/in/jorge-berbel-ruiz-0226b1186/" target="blank"> 
+            <img src="images/linkedin.png" class="icon"></img>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 1: ABOUT ME -->
+    <div id="About" class="tabcontent fade">  
+      <!-- Self description -->    
+      <div class="text">
+        <h2>Who am I?</h2>
+          Hi! My name is Jorge Berbel and, at present, I'm a student at 
+          <a href="https://www.uah.es/es/" style="text-decoration: none; color: yellow;" target="blank">University of Alcalá</a> on his way to become an engineer. </br>
+          Accounting, information systems and software engineering are some of the subjects I learn on my career, 
+          but, it is in the programming ones where my passion lies on: website development. <br>
+          <br>
+          <h2>What is this page?</h2>
+          The purpose of this page is mainly professional. However, it also serves as a conduit to release my artistic
+          energy. Having said this, I will intend to upload all the designs I'll be making to improve my skills in
+          website layouts.
+      </div>
+    </div>
+
+    <!-- TAB 2: DESIGNS -->
+    <div id="Designs" class="tabcontent fade">
+      <!-- Slideshow where photos will be shown -->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="images/des1.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/foto1.jpg" style="width:100%">
+        </div>         
+        <div class="mySlides fade">
+          <img src="images/foto2.jpg" style="width:100%">
+        </div>        
+        <div class="mySlides fade">
+          <img src="images/foto3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="images/foto4.jpg" style="width:100%">
+        </div>    
+      </div>
+
+      <!-- Next and previous buttons-->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div id="Experience" class="tabcontent fade">
+      <div class="cont">
+              
+        <div class="container">
+          <div class="skills html">
+            <p style="color: white">HTML</p>
+          </div>      
+        </div>
+
+        <div class="container">
+          <div class="skills css">
+            <p style="color: white">CSS</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="skills bs">
+            <p style="color: white">Bootstrap</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="skills sass">
+            <p style="color: white">Sass</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="skills js">
+            <p style="color: white">JavaScript</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="skills react">
+            <p style="color: white">ReactJS</p>
+          </div>
+        </div>
+                
+        <div class="container">
+          <div class="skills node">
+            <p style="color: white">NodeJS</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="skills python">
+            <p style="color: white">Python</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="skills java">
+            <p style="color: white">Java</p>
+          </div>
+        </div>
+          
+        <div class="container">
+          <div class="skills sql">
+            <p style="color: white">PostgreSQL</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="skills git">
+            <p style="color: white">Git</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Button to download CV -->
+      <a href="Curriculum.docx" class="download" download>Download CV</a>
+
+    </div>  
+        
+    <!-- Link to the JavaScript file -->
+    <script src="functions.js"></script>
+  </body>
+</html>
