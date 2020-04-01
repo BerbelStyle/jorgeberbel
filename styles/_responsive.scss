@@ -1,0 +1,36 @@
+@import "./mixins";
+
+/* Responsive design */
+@media only screen and (max-width: 800px) {
+
+    .logo {
+      height: 35px;
+      width: 35px;
+    }
+    .tablinks {
+      font-size: 12px;
+    }
+    .autor {
+      font-size: 8px;
+      @include centerDiv(4.5);
+    }
+    .social {
+      width: 20%;
+    }
+    
+    .con {
+      width: 80%;
+      @include centerDiv(-5);
+    }
+
+    .text {
+      font-size: 15px;
+    }
+    .icon {
+      width: 18px;
+    }
+    .download {
+      width: 50%;
+      font-size: 12px;
+    }
+  }

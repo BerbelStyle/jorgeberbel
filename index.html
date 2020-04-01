@@ -6,19 +6,23 @@
       <link rel="shortcut icon" href="images/logoprin.png">
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
       <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-
+    <div class="home">
+    <button class="tablinks " onclick="openTab(event, 'Home')" id="defaultOpen">
+      <img src="images/logo.png" class="logo"></img>
+    </button>
+  </div>
+    
     <div class="header">
-      <button class="tablinks home" onclick="openTab(event, 'Home')" id="defaultOpen">
-        <img src="images/logo.png" class="logo"></img>
-      </button>
       <button class="tablinks" onclick="openTab(event, 'About')">About  Me</button>
       <button class="tablinks" onclick="openTab(event, 'Designs')">Designs</button>
       <button class="tablinks" onclick="openTab(event, 'Experience')">Experience</button>
     </div>
-        
+    
+    
+
     <!-- TAB 0: HOME -->
     <div id="Home" class="tabcontent fade">
       <div class="cover">    
@@ -28,40 +32,45 @@
         <img src="images/jorge1.jpeg" class="photo"></img>
         <img src="images/jorge5.jpeg" class="photo"></img>
         <img src="images/jorge4.jpeg" class="photo"></img>
-
-        <!-- Author -->
-        <div class="autor">Jorge Berbel</div>
         
-        <!-- Social links -->
-        <div class="social">
-          <a href="https://www.instagram.com/jorge.berbel/?hl=es" target="blank"> 
-            <img src="images/instagram.png" class="icon"></img>
-          </a>
-          <a href="https://github.com/BerbelStyle" target="blank"> 
-            <img src="images/github.png" class="icon"></img>
-          </a>
-          <a href="https://www.linkedin.com/in/jorge-berbel-ruiz-0226b1186/" target="blank"> 
-            <img src="images/linkedin.png" class="icon"></img>
-          </a>
-        </div>
+        
       </div>
+      <!-- Author -->
+      <div class="autor">Jorge Berbel</div>
     </div>
 
     <!-- TAB 1: ABOUT ME -->
     <div id="About" class="tabcontent fade">  
-      <!-- Self description -->    
+      <!-- Self description -->   
+      <div class="con">
       <div class="text">
         <h2>Who am I?</h2>
+          <p>
           Hi! My name is Jorge Berbel and, at present, I'm a student at 
           <a href="https://www.uah.es/es/" style="text-decoration: none; color: yellow;" target="blank">University of Alcalá</a> on his way to become an engineer. </br>
           Accounting, information systems and software engineering are some of the subjects I learn on my career, 
-          but, it is in the programming ones where my passion lies on: website development. <br>
+          but, it is in the programming ones where my passion lies on: website development.</p>
           <br>
-          <h2>What is this page?</h2>
+        <h2>What is this page?</h2>
+          <p>
           The purpose of this page is mainly professional. However, it also serves as a conduit to release my artistic
           energy. Having said this, I will intend to upload all the designs I'll be making to improve my skills in
-          website layouts.
+          website layouts.</p>
+          <br>
+        <h2>Contact</h2><!-- Social links -->
+          <div class="social">
+            <a href="https://www.instagram.com/jorge.berbel/?hl=es" target="blank"> 
+              <img src="images/instagram.png" class="icon"></img>
+            </a>
+            <a href="https://github.com/BerbelStyle" target="blank"> 
+              <img src="images/github.png" class="icon"></img>
+            </a>
+            <a href="https://www.linkedin.com/in/jorge-berbel-ruiz-0226b1186/" target="blank"> 
+              <img src="images/linkedin.png" class="icon"></img>
+            </a>
+          </div>    
       </div>
+      </div> 
     </div>
 
     <!-- TAB 2: DESIGNS -->

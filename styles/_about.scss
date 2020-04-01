@@ -1,0 +1,41 @@
+@import "./mixins";
+
+.con {
+    @include centerDiv(0);
+    width: 50%;
+    height: 70%;
+    text-overflow: clip;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.text {
+    align-self: center;
+    font-family: $primaryFont;   
+    color: $textColor;
+    font-size: 20px; 
+    flex-direction: column;
+    text-align: justify;
+    h2 {
+        color: $secondaryColor;
+    }
+}
+
+.social {
+    display: flex;
+    width: 20%;
+    justify-content: left;
+    margin-top: 2%;
+  }
+  
+  .icon {
+    width: 30px;
+    border: 2px solid $primaryColor;
+    transition: 0.5s;
+    border-radius: 2px;
+    margin-right: 10px;
+    &:hover {
+      border: 2px solid $secondaryColor;
+      transition: 0.5s;
+    }
+  }
