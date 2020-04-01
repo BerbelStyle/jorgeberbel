@@ -13,7 +13,6 @@
     .autor {
       font-size: 8px;
       @include centerDiv(4.5);
-      overflow: scroll;
     }
     .social {
       width: 20%;
@@ -21,11 +20,15 @@
     
     .con {
       width: 80%;
-      @include centerDiv(-5);
+      @include centerDiv(0);
+      overflow: scroll;
+      display: block;
     }
 
     .text {
       font-size: 15px;
+      top: 50%;
+      
     }
     .icon {
       width: 18px;
